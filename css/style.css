@@ -1,0 +1,61 @@
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* main */
+h1 {
+  font-size: 4rem;
+  align-self: center;
+}
+
+select {
+  height: 2rem;
+  align-self: center;
+}
+
+.wrapper div:first-child {
+  height: 20vh;
+  background-color: #ff9087;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.doggos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  display: none;
+  animation: spin 2s linear infinite;
+  font-size: 50px;
+  text-align: center;
+}
+
+.dog-img {
+  display: none;
+  width: 500px;
+  max-width: 98%;
+}
+
+.show {
+  display: block;
+}
+
+/* animations */
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
