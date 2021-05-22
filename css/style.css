@@ -27,7 +27,6 @@ select {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-evenly;
-  flex-flow: row wrap;
 }
 
 .doggos {
@@ -57,5 +56,12 @@ select {
 @keyframes spin {
   to {
     transform: rotateZ(360deg);
+  }
+}
+
+/* media query */
+@media screen and (max-width: 500px) {
+  .wrapper div:first-child {
+    flex-direction: column;
   }
 }
